@@ -1,0 +1,8 @@
+<p>
+  {{greeting}}
+  <label><input type="checkbox" [(ngModel)]="isShowMore"></label>
+</p>
+<p *ngIf="isShowMore" testdire>ShowMore</p>
+<p>来自父组件:{{message}}</p> 
+
+<button (click)='sendToParent()'>发送</button>
